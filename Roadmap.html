@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta charset="utf-8"/>
+<title>GeoViews Roadmap, as of 6/2018 — GeoViews 1.6.5 documentation</title>
+<meta content="Geographic visualizations for HoloViews." name="description"/>
+<meta content="PyViz Developers" name="author"/>
+<!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+    WebFont.load({
+      google: {
+        families: ['Source Sans Pro']
+      }
+    });
+  </script>
+<!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="_static/css/main.css" rel="stylesheet"/>
+<link href="_static/nbsite.css" rel="stylesheet"/>
+<link href="_static/geoviews.css" rel="stylesheet"/>
+<!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+</script>
+<script src="_static/js/main.js"></script>
+<script src="_static/nbsite.js"></script>
+<script src="_static/require.js"></script>
+<!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="_static/favicon.ico" rel="icon" type="image/png"/>
+<!-- Canonical
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<link href="/Roadmap.html" rel="canonical">
+</link></head>
+<body class="">
+<header class="navigation">
+<div class="wrapper">
+<a class="logo" href="index.html">
+<img alt="Logo" src="_static/geoviews-logo.png"/>
+</a>
+<a class="navigation-menu logo-text" href="index.html">GeoViews</a>
+<a class="navigation-menu-button" href="javascript:void(0)" id="js-mobile-menu">Menu</a>
+<nav>
+<ul class="navigation-menu show" id="js-navigation-menu">
+<li class="nav-link">
+<div style="display:inline-block;vertical-align: middle;">
+<div class="search-bar">
+<form action="search.html" method="get" role="search">
+<input name="q" placeholder="Search" type="search"/>
+<button type="submit">
+<img alt="Search Icon" src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon-black.png"/>
+</button>
+</form>
+</div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</header>
+<div class="second-nav">
+<nav>
+<ul class="navigation-menu show">
+<li class="nav-link doc-head"><a href="user_guide/index.html">User Guide</a></li>
+<li class="nav-link doc-head"><a href="gallery/index.html">Gallery</a></li>
+<li class="nav-link doc-head"><a href="about.html">About</a></li>
+</ul>
+</nav>
+</div>
+<!-- MAIN BODY OF DOCS –––––––––––––––––– -->
+<div class="docs section">
+<div id="hacketyhackhack"> <!-- style="width:20%;margin-right: 100px;"> --> <!--style="display: none;"> style="display:none;"> -->
+<div class="toc" style="width:15%; margin-right:20px;">
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/index.html">User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery/index.html">Gallery</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Roadmap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+</ul>
+</div>
+</div>
+<div class="content"> <!-- style="max-width:80%;margin-left:auto;margin-right: auto;">-->
+<div class="section" id="geoviews-roadmap-as-of-6-2018">
+<h1>GeoViews Roadmap, as of 6/2018<a class="headerlink" href="#geoviews-roadmap-as-of-6-2018" title="Permalink to this headline">¶</a></h1>
+<p>GeoViews is under continuous development and improvement, with
+priorities determined by user input, the needs of current projects,
+and external funding.</p>
+<p>Immediate, already funded priorities for 2018 include:</p>
+<ol class="arabic simple">
+<li><p><strong>Ongoing maintenance, improved documentation and examples</strong>: As
+always, there are various bugs and usability issues reported on the
+issue tracker, and we will address these as time permits.</p></li>
+<li><p><strong>Improved imaging, simulation, machine learning, and Earth science
+workflows</strong>: Support for working with image and other
+multidimensional data for visualization and machine-learning
+applications, including on HPC systems.</p></li>
+<li><p><strong>Improvements to map drawing tools</strong>:
+- Better support for collecting annotations on top of maps
+- other usability improvements</p></li>
+<li><p><strong>Simpler deployment of large-scale visualizations</strong>: Automatic
+generation of slippy-map tiles for exploration of large datasets
+using standard web servers</p></li>
+<li><p><strong>Rasterization of polygons</strong>: A very common problem in GIS applications
+is combining gridded and geometry data.  As part of ongoing work, datashader
+will gain the ability to rasterize arbitrary geometries by value or simply
+as boolean masks.</p></li>
+</ol>
+<p>Other things we’d like to see in GeoViews or in other supporting tools
+in the PyViz ecosystem include:</p>
+<ol class="arabic simple">
+<li><p><strong>Integrating 3D earth rendering into GeoViews</strong>: We have a first <a class="reference external" href="http://assets.holoviews.org/demos/HoloViews_CesiumJS.html">prototype
+for a CesiumJS backend for rendering Google-Earth-style plots</a>,
+but much more work is needed to make it practical for real use.</p></li>
+<li><p><strong>Toolbox for GIS primitives</strong>: Existing GIS packages provide
+canned domain-specific functionality, such as computing
+vegetation indexes and other common manipulations of Earth-related
+data. It would be helpful to provide a well-tested collection of
+these common operations built on the PyViz stack so that it can be a
+more “drop-in” replacement for proprietary GIS systems.  Examples
+of desirable functionality:</p>
+<ul class="simple">
+<li><p>Fast geographic indexes for Datashader: NDVI, slope, aspect, hillshade</p></li>
+<li><dl class="simple">
+<dt>Fast geographic operations for Datashader</dt><dd><ul>
+<li><dl class="simple">
+<dt>Zonal statistics for an ROI</dt><dd><ul>
+<li><p>Percentage area by category</p></li>
+<li><p>Summary stats</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>Hydrology tools</dt><dd><ul>
+<li><p>Flow accumulation</p></li>
+<li><p>Flow direction</p></li>
+<li><p>Watershed</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Euclidean distance based on input geometry (lines / polygons / points)</p></li>
+<li><p>Suitability analysis (combining multiple binary aggregates into a yes/no composite)</p></li>
+<li><p>Generate contours from aggregate</p></li>
+<li><p>Calculate viewshed from aggregate</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Color ramps for showing elevation</p></li>
+<li><p>Bokeh interfaces for external geo data sources (GPX, KML, WMS)</p></li>
+<li><p>Datashader-based WMS Data Server (aggregating an incoming WMS query on demand)</p></li>
+</ul>
+</li>
+<li><p>Better support for working with remote datasets and remote computation.
+Earth-related datasets tend to be large and remote, and we need to make
+examples of best practice for working with such datasets conveniently and
+with reasonable performance.</p></li>
+<li><p>Integration with other tools like
+[OpenLayers](<a class="reference external" href="https://openlayers.org/">https://openlayers.org/</a>),
+[Deck.GL](<a class="reference external" href="http://uber.github.io/deck.gl">http://uber.github.io/deck.gl</a>), and
+[Leaflet](<a class="reference external" href="https://leafletjs.com/">https://leafletjs.com/</a>) (e.g. via
+[Folium](<a class="reference external" href="https://github.com/python-visualization/folium">https://github.com/python-visualization/folium</a>)).</p></li>
+<li><p>Scalable rasterization of raster data, as well as recti- and curvi-linear
+grids, implemented using Dask and Numba in Datashader and exposed in
+HoloViews and GeoViews as fast distributed rendering for Image and
+QuadMesh objects.</p></li>
+<li><p>Support for [cartograms](<a class="reference external" href="https://en.wikipedia.org/wiki/Cartogram">https://en.wikipedia.org/wiki/Cartogram</a>),
+presumably via an interface to an external program or library.</p></li>
+</ol>
+<p>If any of the functionality above is interesting to you (or you have
+ideas of your own!) and can offer help with implementation, please
+open an issue on this repository. And if you are lucky enough to be in
+a position to fund our developers to work on it, please contact
+<code class="docutils literal notranslate"><span class="pre">sales@anaconda.com</span></code>.</p>
+</div>
+</div>
+</div>
+<!-- END MAIN BODY OF DOCS ––––––––––––– -->
+<footer class="footer">
+<div class="footer-links">
+<ul>
+<li><span class="footer-title">Links</span></li>
+<li><a href="user_guide/index.html">User Guide</a></li>
+<li><a href="gallery/index.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+<ul>
+<li><span class="footer-title">Join Us</span></li>
+<li><a href="//gitter.im/pyviz/pyviz">Gitter</a></li>
+<li><a href="//twitter.com/holoviews">Twitter</a></li>
+<li><a href="//github.com/pyviz/geoviews">Github</a></li>
+</ul>
+<ul class="copyright">
+<li>2018 PyViz Developers</li>
+</ul>
+</div>
+</footer>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61554933-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- MathJax Config -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
